@@ -1,0 +1,48 @@
+Color Code My Task Card Based on the Status of the Audit ---------------- today ---- done
+	in-Progress --> FFFFFF
+	in-Review --> FFD76C
+	Completed --> E0FFB8
+
+Automate the drop down values in WO ------------------------ tomorrow
+	WO — any discrepancy = "0" should auto pop as PASS. All other findings (> 0) should auto pop as Major NC
+
+WO - A card should pop up if a reviewer adds comments-------------------tomorrow
+	A card should pop up if a reviewer adds comments
+	If a reviewer adds comments to any of the work order from the work order reference; It should pop up at the auditors end when the 		audit is assigned back.
+
+WebApp - The card should show WO Date range --------------------- done
+
+WebApp - List of items ------------------------ sunday
+
+WebApp - Click to answer background colour --------- today - done
+
+WebApp - FAQ Feature -------------- today--- done
+
+Filter Does not have In-Review status. -------------------- today - done
+
+PM Quality Assessment should not be shown if PM Activity is None
+	PM Quality Assessment should not be shown if the Audit Manager selects “None” for PM Activity. ---------------- sunday ---- test
+
+
+
+className={`data-upload-row ${!data.reviewer_remark ? ((data.validation == 'Pass') ? 'completedClass' :
+                        (data.isQuant === 'false') ? (data.validation != 'Pass' && (!data.auditor_comments ||
+                          !data.observation || !data.url || data.url.length == 0) ? 'missing-info' : 'completedClass') :
+                          (data.isQuant === 'true') ? !!data.validation ? 'completedClass' : 'missing-info' : 'missing-info') : 'reviewerClass'}`}
+
+-------------------------------------------------------------------------------------------------------------------------
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
